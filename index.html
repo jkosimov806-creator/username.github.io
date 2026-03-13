@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Магазин телефонов</title>
+
+<style>
+body{
+    background:#f3f4f6;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    color:#1e40af;
+}
+
+.product{
+    display:inline-block;
+    background:white;
+    width:220px;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.product img{
+    width:100%;
+    border-radius:10px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    background:#22c55e;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+</style>
+
+<script>
+let cart = 0;
+
+function addToCart(product){
+    cart++;
+    alert("Вы добавили " + product + " в корзину!\nВсего товаров: " + cart);
+}
+</script>
+
+</head>
+<body>
+
+<h1>Магазин телефонов 📱</h1>
+
+<div class="product">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/IPhone_12.png" alt="iPhone 12">
+    <h3>iPhone 12</h3>
+    <p>Цена: 799$</p>
+    <button onclick="addToCart('iPhone 12')">Купить</button>
+</div>
+
+<div class="product">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Samsung_Galaxy_S21.png" alt="Samsung Galaxy S21">
+    <h3>Samsung Galaxy S21</h3>
+    <p>Цена: 699$</p>
+    <button onclick="addToCart('Samsung Galaxy S21')">Купить</button>
+</div>
+
+<div class="product">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Google_Pixel_6.png" alt="Google Pixel 6">
+    <h3>Google Pixel 6</h3>
+    <p>Цена: 599$</p>
+    <button onclick="addToCart('Google Pixel 6')">Купить</button>
+</div>
+
+</body>
+</html>
